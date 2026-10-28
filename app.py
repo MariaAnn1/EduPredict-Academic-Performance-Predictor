@@ -34,6 +34,27 @@ FEATURES = [
     "Class_Participation"
 ]
 
+ranges = {
+    "Attendance_Percentage": (
+        "Attendance percentage", 0, 100, 1
+    ),
+    "Assignment_Score": (
+        "Assignment score", 0, 100, 1
+    ),
+    "Internal_Mark": (
+        "Internal mark", 0, 100, 1
+    ),
+    "Study_Hours_Per_Day": (
+        "Study hours per day", 0, 24, 0.5
+    ),
+    "Previous_GPA": (
+        "Previous GPA", 0, 10, 0.1
+    ),
+    "Class_Participation": (
+        "Class participation", 0, 10, 1
+    )
+}
+
 TARGET = "Performance"
 
 
@@ -539,27 +560,6 @@ elif page == "Performance Predictor":
         "This tool provides an educational estimate, "
         "not a judgement of a student's ability."
     )
-
-    ranges = {
-        "Attendance_Percentage": (
-            "Attendance percentage", 0, 100, 1
-        ),
-        "Assignment_Score": (
-            "Assignment score", 0, 100, 1
-        ),
-        "Internal_Mark": (
-            "Internal mark", 0, 100, 1
-        ),
-        "Study_Hours_Per_Day": (
-            "Study hours per day", 0, 24, 0.5
-        ),
-        "Previous_GPA": (
-            "Previous GPA", 0, 10, 0.1
-        ),
-        "Class_Participation": (
-            "Class participation", 0, 10, 1
-        )
-    }
 
     with st.form("prediction_form"):
 
