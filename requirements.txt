@@ -1,4 +1,6 @@
 streamlit
 pandas
 numpy
-scikit-learn
+scikit-learngit add README.md
+git commit -m "Add project README"
+git push
